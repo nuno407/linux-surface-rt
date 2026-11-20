@@ -16,7 +16,7 @@ Anything derived from a vendor's unpublished or proprietary sources is not in th
 
 | Input | Source |
 | --- | --- |
-| Linux 7.2.13 | kernel.org, `linux-7.2.13.tar.xz`, sha256 `08e7b0c4f2dd1971f972da274b5e589a98989390ac56acd7a1a5af922363ea6c` |
+| Linux 7.3.5 | kernel.org, `linux-7.3.5.tar.xz`, sha256 `8f293f83d54f0b7b9be56863ebc5e4ea79d73e530b4ae55c572be97ef39f0990` |
 | libre-tegra | codeberg.org/libre-tegra/linux, tag `v7.0.1-stable`, commit `bfffc6d6656e` (the kernel postmarketOS packages as `linux-postmarketos-grate`), GPL-2.0 |
 | nerves_system_surface_rt | github.com/CoderDennis/nerves_system_surface_rt, branch `main`, commit `d068902a00ff`, `linux/` (GPL-2.0-only), by Dennis Palmer |
 | NVIDIA's Tegra Android kernel | android.googlesource.com/kernel/tegra, commit `2268683075e741190919217a72fcf13eb174dc57`, GPL-2.0 |

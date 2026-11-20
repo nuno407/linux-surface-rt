@@ -1,7 +1,7 @@
 #!/bin/bash
 # SPDX-License-Identifier: MIT
 #
-# surface-rt/build.sh: build Linux 7.2.13 for the Microsoft Surface RT (Tegra 3, Tegra30): the kernel,
+# surface-rt/build.sh: build Linux 7.3.5 for the Microsoft Surface RT (Tegra 3, Tegra30): the kernel,
 # its device trees and the modules. It runs inside the build container; ../build.sh starts it there.
 # See README.md.
 #
@@ -9,7 +9,7 @@
 #   WORK       work directory: the kernel tree and its objects (default /src/surface-rt)
 #   CACHE      where downloads are kept (default $WORK/cache)
 #   OUT        output directory for the artifacts (default $WORK/out)
-#   KTREE      use this unpacked linux-7.2.13 tree in place instead of a fresh one
+#   KTREE      use this unpacked linux-7.3.5 tree in place instead of a fresh one
 #   JOBS       parallel make jobs (default: nproc)
 #   OVERLAY    a directory with surface-rt/overlay.sh, which may add patches, configuration and steps
 #              (see README.md, "Overlays")
@@ -20,9 +20,9 @@ PUB=$HERE
 WORK=${WORK:-/src/surface-rt}
 JOBS=${JOBS:-$(nproc)}
 
-KVER=7.2.13
+KVER=7.3.5
 KURL=https://cdn.kernel.org/pub/linux/kernel/v7.x/linux-$KVER.tar.xz
-KSHA256=08e7b0c4f2dd1971f972da274b5e589a98989390ac56acd7a1a5af922363ea6c
+KSHA256=8f293f83d54f0b7b9be56863ebc5e4ea79d73e530b4ae55c572be97ef39f0990
 
 # What an overlay may change. The build's identity is fixed, so a build is reproducible; it is what
 # `uname -v` says, so move the timestamp on whenever the kernel changes.

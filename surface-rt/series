@@ -1,4 +1,4 @@
-# The patches, in the order they are applied on Linux 7.2.13: one shell command a line, run with PUB
+# The patches, in the order they are applied on Linux 7.3.5: one shell command a line, run with PUB
 # (this directory) set and apply (the build script) applying a patch once. Each group says where its
 # patches come from; PROVENANCE.md has the citations.
 #

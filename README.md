@@ -3,7 +3,7 @@
 Build scripts and patches that turn a kernel.org Linux release into a kernel for the Microsoft
 Surface RT (2012), a tablet with an NVIDIA Tegra 3 (Tegra30) system on a chip.
 
-The build makes Linux 7.2.13 from the kernel.org tarball, checked against its sha256, and produces
+The build makes Linux 7.3.5 from the kernel.org tarball, checked against its sha256, and produces
 versioned *artifacts*: the compressed kernel `zImage`, the device trees, the modules and a
 `manifest.json` that lists them with their sizes and sha256 sums. How they are booted (the UEFI
 firmware, a boot loader, a root filesystem) is up to the system built on top.
@@ -28,7 +28,7 @@ Corporation.
 
 The first run builds the container image (`linux-surface-rt-build`) and creates the volume
 (`linux-surface-rt-src`). A build takes about 30 minutes on a 4-core desktop. Each run starts from a
-fresh kernel tree; `KTREE=/src/surface-rt/linux-7.2.13` reuses the tree of the run before, which only
+fresh kernel tree; `KTREE=/src/surface-rt/linux-7.3.5` reuses the tree of the run before, which only
 rebuilds what changed.
 
 Settings, as environment variables: `BUILD_IMAGE` and `VOLUME` choose another container image or
